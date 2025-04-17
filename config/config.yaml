@@ -1,0 +1,28 @@
+# livekit-relay
+livekit:
+  url: "ws://127.0.0.1:7880"
+  api_key: "key"
+  api_secret: "secret"
+  room_name: "room"
+  identity: "streamer"
+
+# health-monitor
+health:
+  parallel: 10          # 병렬처리 갯수
+  chk_sec: 300          # 확인시간
+
+# analyzer
+monitor:
+  parallel: 10        # 병럴처리 갯수
+  duration_sec: 30    # 가동시간
+
+# analyzer, health-monitor
+rtsp_streams:
+  - name: "Rtsp01"
+    url: "rtsp://183.109.117.180:20554/5D62757A-3843-D643-BD92-AA7C559AD91D"
+  - name: "Rtsp02"
+    url: "rtsp://183.109.117.180:20554/3917824F-AC05-424B-8290-C68787AB96DA"
+
+# ts-dump 
+ts:
+  duration: 30      # 분할저장 시간, 0이면 분할X (90kHz 기준)
