@@ -17,7 +17,7 @@ import (
 
 func main() {
 	if len(os.Args) != 2 {
-		fmt.Println("Usage: ./app <rtsp-url>")
+		fmt.Println("Usage: ./main.go <rtsp-url>")
 		os.Exit(1)
 	}
 
