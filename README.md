@@ -3,6 +3,10 @@
 
 ---
 
+<p align="right">
+  📘 <a href="#english-summary">View English Summary</a>
+</p>
+
 ## 구성 기능
 
 | 디렉토리         | 설명                                                                   |
@@ -55,3 +59,16 @@ go run ./cmd/ts-dumper rtsp://127.0.0.1:554
 - 분할 저장 지원 – config에서 저장 주기(seconds) 설정 가능
 
 - 확장성 – 향후 HLS, mp4 변환, Web UI 연동 등 기능 확장 가능
+
+
+---
+
+## English Summary
+
+go-rtsp-tools is a lightweight RTSP utility toolkit written in Go.  
+It provides real-time RTSP stream inspection, packet loss analysis, LiveKit relay, and TS segment saving.
+
+- Pure Go implementation (no FFmpeg)
+- NAL-level parsing and MPEG-TS generation
+- Modular CLI tools for health checking, inspection, and transformation
+
