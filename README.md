@@ -19,11 +19,23 @@ livekit-relay     | Relay RTP packets to a LiveKit WebRTC server
 ts-dumper         | Save RTSP stream as `.ts` files (with optional segment duration)
 
 # Usage
-go run ./cmd/live-inspector rtsp://127.0.0.1:554       # Inspect RTSP SDP and NAL stream
-go run ./cmd/health-monitor                            # Basic health monitor (RTP reception check)
-go run ./cmd/stream-analyzer                           # Analyze stream quality (loss, bitrate, IDR count, etc.)
-go run ./cmd/livekit-relay                             # Relay to LiveKit WebRTC (requires RTP on UDP 5004)
-go run ./cmd/ts-dumper rtsp://127.0.0.1:554            # Save RTSP stream to TS file (segment duration configurable)
+
+```shell
+# Inspect RTSP SDP and NAL stream
+go run ./cmd/live-inspector rtsp://127.0.0.1:554
+
+# Basic health monitor (RTP reception check)
+go run ./cmd/health-monitor                            
+
+# Analyze stream quality (loss, bitrate, IDR count, etc.)
+go run ./cmd/stream-analyzer                           
+
+# Relay to LiveKit WebRTC (requires RTP on UDP 5004)
+go run ./cmd/livekit-relay                             
+
+# Save RTSP stream to TS file (segment duration configurable)
+go run ./cmd/ts-dumper rtsp://127.0.0.1:554            
+```
 
 # Tech Stack
 - Go 1.20+
@@ -38,10 +50,12 @@ go run ./cmd/ts-dumper rtsp://127.0.0.1:554            # Save RTSP stream to TS 
 
 ---
 
+## 한국어
+
+## 개요
 **Go 기반 RTSP 스트림 분석 및 저장 툴킷** <br>
 실시간 RTSP 수신, 분석, TS 저장, Livekit 릴레이 지원가능한 경량 유틸리티
 
-## 한국어
 ## 구성 기능
 
 | 디렉토리         | 설명                                                                   |
